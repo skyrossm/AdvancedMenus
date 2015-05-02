@@ -117,7 +117,7 @@ public class GuiRenameTab extends GuiScreen
         if(exists){
         	this.drawCenteredString(this.fontRendererObj, I18n.format("That tab already exists!", new Object[0]), this.width / 2, 34, 16777215);
         }
-        this.drawString(this.fontRendererObj, I18n.format("Enter Tab Name", new Object[0]), this.width / 2 - 100, 94, 10526880);
+        this.drawString(this.fontRendererObj, I18n.format("Enter New Tab Name", new Object[0]), this.width / 2 - 100, 94, 10526880);
         this.tabName.drawTextBox();
         super.drawScreen(mouseX, mouseY, partialTicks);
     }

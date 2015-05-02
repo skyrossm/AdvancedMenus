@@ -129,7 +129,9 @@ public class GuiMultiplayerSky extends GuiScreen implements GuiYesNoCallback
         }
         for(Object o : this.buttonList){
         	GuiButton btn = (GuiButton) o;
-        	currentTab = AdvancedMenus.tabs.get(0).getName();
+        	if(currentTab.isEmpty()){
+        		currentTab = AdvancedMenus.tabs.get(0).getName();
+        	}
         	String name = currentTab;
         	boolean isTooLong = false;
         	int max = this.width / 8 + 2;
@@ -244,7 +246,7 @@ public class GuiMultiplayerSky extends GuiScreen implements GuiYesNoCallback
             	this.savedServerList = new SkyServerList(this.mc, currentTab);
                 this.serverListSelector.addServers(savedServerList);
                 this.serverListSelector.setSelected(-1);
-                this.title = AdvancedMenus.tabs.get(index).getName();
+                this.title = currentTab;
             }else if(button.id == 9){
             	this.mc.displayGuiScreen(new GuiTabs(this));
             }

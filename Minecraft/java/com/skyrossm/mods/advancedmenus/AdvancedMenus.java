@@ -58,7 +58,6 @@ public class AdvancedMenus
     		tabs.add(new ServerTab(f.getName()));
     		tabCount++;
     	}
-    	System.out.println("Loaded " + tabCount + " Server Tabs");
     }
 
 	public static void addTab(ServerTab serverTab) {
