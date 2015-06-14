@@ -1,5 +1,5 @@
 # AdvancedMenus
-More Organized Player Menus, written by Skyrossm
+More Organized Player Menus, written by Skyrossm and Walt_Disney_II/zedlander1000
 #Idea by: 
 http://www.minecraftforum.net/members/Walt_Disney_II
 #Forum Topic: 
